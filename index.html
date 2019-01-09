@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Furia 139</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+  </head>
+
+  <body>
+      <!-- Animation first cover on load page -->
+      <section id="front-cover">
+          <h2 class="logo-front-cover">Furia 139</h2>
+          <h3 class="logo-front-cover">Tattoo Artist</h3>
+      </section>
+
+      <header>
+          <!-- Black div that covers index page on initial animation -->
+          <div class="black-cover"></div>
+          <!-- Navigation bar  -->
+          <nav>
+              <div class="nav-links">
+                  <ul>
+                      <li class="about" onclick="aboutClick()"><a href="#">about</a></li>
+                      <li class="insta"><a href="https://www.instagram.com/furia139">instagram</a></li>
+                      <li><a href="mailto: furia@gmail.com">contact</a></li>
+                  </ul>
+              </div>
+              <div class="nav-logo">
+                  <a href="index.html"><img src="images/logofuria.jpeg"></a>
+              </div>
+          </nav>
+          <!-- Background that contains image slider -->
+          <div class="bg">
+              <div class="arrow-area">
+                  <div class="arrow-left"></div>
+                  <div class="arrow-right"></div>      
+              </div>
+              <div class="img-slider">
+                  <img src="https://inkaholics.co.uk/wp-content/uploads/2018/01/unnamed-6.jpg" alt="">
+              </div>
+              <div class="img-slider">
+                  <img src="https://inkaholics.co.uk/wp-content/uploads/2018/01/unnamed-8.jpg" alt="">
+              </div>
+              <div class="img-slider">
+                  <img src="https://inkaholics.co.uk/wp-content/uploads/2018/01/unnamed-9.jpg" alt="">
+              </div>
+          </div>
+          <div class="dots">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+          </div>
+      </header>
+
+      <!-- About me scroll up page -->
+      <div id="about">
+          <div class="portrait">
+              <img class="portrait-img" src="images/furia.jpeg" alt="portrait" onclick="aboutClick()">
+              <div class="back-icon">
+                <i class="fa fa-angle-down" onclick="arrowClick()"></i>
+              </div>
+          </div>
+          <div class="bio">
+              <h2>Hello,</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+      </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+    <script src="JS/index.js"></script>
+    <script src="JS/anime.js"></script>
+  </body>
+</html>

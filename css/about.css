@@ -1,0 +1,98 @@
+body {
+  overflow: hidden;
+}
+
+#about {
+  background: rgb(10, 10, 10);
+  height: 700px;
+  padding: 10px;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  transition: all .6s .3s ease-out;
+  z-index: 5;
+  visibility: hidden;
+}
+
+#about.active {
+  top: -730px;
+  visibility: visible;
+  z-index: 5;
+  transition: all .5s .6s ease-in;
+}
+
+#about .portrait {
+  display: inline-block;
+  float: left;
+  position: relative;
+  left: 100px;
+  top: 55px;
+  height: 500px;
+  width: 400px;
+  border: 1px solid white;
+  border-radius: 30%;
+  opacity: 0;
+  transition: all .1s .1s ease-out;
+}
+
+#about.active .portrait {
+  opacity: 1;
+  transition:  all 1s .4s ease-in;
+}
+
+
+#about .portrait .back-icon {
+  width: 10%;
+  position: relative;
+  left: 500px;
+  top: 10px;
+  font-size: 40px;
+  text-align: center;
+}
+
+#about .portrait .back-icon .fa{
+  cursor: pointer;
+  color: white;
+}
+
+#about .portrait .back-icon .fa:hover {
+  color: rgb(214, 214, 214);
+}
+
+
+#about .portrait img {
+  height: 100%;
+  width: 100%;
+  border-radius: 30%;
+}
+
+#about .bio {
+  display: inline-block;
+  float: right;
+  padding: 20px;
+  height: 500px;
+  width: 50%;
+  opacity: 0;
+  transition:  all .1s .1s ease-out;
+}
+
+#about.active .bio {
+  opacity: 1;
+  transition:  all 1s .4s ease-in;
+}
+
+#about .bio h2{
+  font-size: 50px;
+  font-weight: bolder;
+  margin-top: 70px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+#about .bio p{
+  font-size: 20px;
+  line-height: 1.4;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+
+}
