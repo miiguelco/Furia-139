@@ -25,16 +25,14 @@ const showSlides = () => { // We are creating a function named showSlides!
     slides[slideIndex - 1].style = "block"; // We access the 'array'slides and through there we say slidesIndex that is position 1 minus 1 = 0 (we access image position 0) set to block!
     dots[slideIndex - 1].style = "black";
 
-    setTimeout (showSlides, 5000); // Grabs the function showSlides and runs 3s each time!
-
-
+    setTimeout (showSlides, 5000); // Grabs the function showSlides and runs 3s each time
 };
 
-showSlides(); // In here we are calling the function showSlides
+showSlides(); // Calling the function showSlides
 
 
 
-// SLIDE ABOUT PAGE UP AND DOWN
+// ABOUT PAGE SLIDE UP AND DOWN
 
 var aboutScreenEl =  document.getElementById('about');
 var retrato = document.getElementsByClassName('.portrait-img');
@@ -47,7 +45,3 @@ function aboutClick () {
 function arrowClick () {
   aboutScreenEl.classList.remove('active');
 }
-
-
-
-// POINTER CHANGING ON SLIDER
