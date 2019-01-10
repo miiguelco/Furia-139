@@ -146,29 +146,4 @@ header .bg .img-slider {
 header .bg .img-slider img {
   height: 100%;
   width: 100%;
-
-}
-
-/* SLIDER DOTS FORMATING */
-
-header .dots {
-  width: 3%;
-  height: 80px;
-  position: relative;
-  top: -195px;
-  left: 410px;
-
-}
-
-header .dots .dot {
-  display: block;
-  height: 15px;
-  width: 15px;
-  position: relative;
-  left: 10px;
-  top: 2px;
-  margin-top: 5px;
-  background-color: grey;
-  border-radius: 50%;
-  transition: background-color 0.6s ease;
 }
