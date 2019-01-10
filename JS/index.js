@@ -1,34 +1,55 @@
 
-// IMAGE SLIDER
+// IMAGE SLIDER SECTION
 
-let slideIndex = 0; // creates a var called slide index that equals to 0. We are creating something like an array that we can start our images count in 0.
+let slides = document.getElementsByClassName('img-slider'); // selects all images
+let leftSideArrow = document.querySelector('.arrow-left'); // Select left side div of arrow area
+let rightSideArrow = document.querySelector('.arrow-right'); // Select right side div of arrow area
+let current = 0; // Represents the image we are on, and it's 0 by default
 
-const showSlides = () => { // We are creating a function named showSlides!
+// Clears all images
+function reset() {
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = 'none';
+  }
+}
 
-    const slides = document.getElementsByClassName("img-slider"); // HTML Collection of DIV's --- Like an array!
-    const dots = document.getElementsByClassName("dot");
+// Initializes the slider, after reseting the images and calls the first one.
+function strartSlide() {
+  reset();
+  slides[0].style.display = 'block';
+}
 
-    for (let i=0; i < slides.length; i++) { // We are looping through all the Html collection and display them as none!
-        slides[i].style.display = "none";
-    }
+// Show previous image
+function slideLeft() {
+  reset();
+  slides[current - 1].style.display = 'block';
+  current--;
+}
 
-    slideIndex++; // Everytime we run the page make sure that we start at 0 and increments by 1. We need to make a condition so our number doesn't exceed the Html collection of 3! At this moment we are at position 1!
+// Show next image
+function slideRight() {
+  reset();
+  slides[current + 1].style.display = 'block';
+  current++;
+}
 
-    if (slideIndex > slides.length) { // This is not true so doesn't run, I continues position 1!
-      slideIndex = 1;
-    }
+// Left arrow click event
+leftSideArrow.addEventListener('click', function () {
+  if (current === 0) {
+    current = slides.length;
+  }
+  slideLeft();
+});
 
-    for (let i=0; i < dots.length; i++) {
-        dots[i].style.background = "black";
-    }
+// Right arrow click event
+rightSideArrow.addEventListener('click', function () {
+  if (current === slides.length - 1) {
+    current = -1;
+  }
+  slideRight();
+});
 
-    slides[slideIndex - 1].style = "block"; // We access the 'array'slides and through there we say slidesIndex that is position 1 minus 1 = 0 (we access image position 0) set to block!
-    dots[slideIndex - 1].style = "black";
-
-    setTimeout (showSlides, 5000); // Grabs the function showSlides and runs 3s each time
-};
-
-showSlides(); // Calling the function showSlides
+strartSlide();
 
 
 
@@ -37,11 +58,11 @@ showSlides(); // Calling the function showSlides
 var aboutScreenEl =  document.getElementById('about');
 var retrato = document.getElementsByClassName('.portrait-img');
 
-function aboutClick () {
+function aboutClick() {
   aboutScreenEl.classList.toggle('active');
 
 }
 
-function arrowClick () {
+function arrowClick() {
   aboutScreenEl.classList.remove('active');
 }
