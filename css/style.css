@@ -12,7 +12,7 @@
   left: 40%;
   opacity: 0;
   width: 250px;
-  height: 200px;
+  height: 0px;
 }
 
 #front-cover .logo-front-cover img {
@@ -61,6 +61,7 @@ header nav .nav-logo {
   display: inline-block;
   position: relative;
   top: 50px;
+  right: 34px;
 }
 
 header nav .nav-logo img {
@@ -79,7 +80,7 @@ header nav .nav-links ul {
   color: rgb(8, 8, 8);
   position: relative;
   top: 130px;
-  left: 115px;
+  left: 80px;
   text-align: end;
   text-transform: uppercase;
   font-family: 'Open Sans', sans-serif;
@@ -95,8 +96,8 @@ a:hover {
 
 header .bg .arrow-area {
   top: -140px;
-  left: 450px;
-  max-width: 580px;
+  left: 339px;
+  max-width: 840px;
   height: 528px;
   z-index: 5;
   position: relative;
@@ -129,7 +130,7 @@ cursor: e-resize;
 
 header .bg .img-slider {
   top: -669px;
-  left: 450px;
+  left: 466px;
   max-width: 580px;
   height: 528px;
   z-index: 3;
