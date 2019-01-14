@@ -4,6 +4,10 @@ anime({
      { value: 670, duration: 1000, delay: 200, elasticity: 0, easing: 'easeInSine' },
      { value: 0, duration: 200, delay: 2000, elasticity: 0, easing: 'easeOutSine' },
    ],
+   zIndex: [
+      { value: 10, duration: 0, delay: 500, elasticity: 0, easing: 'easeInSine' },
+      { value: 4, duration: 200, delay: 2000, elasticity: 0, easing: 'easeOutSine' },
+    ],
 });
 
 anime({
@@ -12,6 +16,10 @@ anime({
      { value: 670, duration: 0, delay: 500, elasticity: 0, easing: 'easeInSine' },
      { value: 0, duration: 200, delay: 2000, elasticity: 0, easing: 'easeOutSine' },
    ],
+   zIndex: [
+      { value: 5, duration: 0, delay: 500, elasticity: 0, easing: 'easeInSine' },
+      { value: 4, duration: 200, delay: 2000, elasticity: 0, easing: 'easeOutSine' },
+    ],
 });
 
 anime({
