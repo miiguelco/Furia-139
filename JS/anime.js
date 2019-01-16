@@ -28,4 +28,8 @@ anime({
      { value: 1, duration: 500, delay: 1000, elasticity: 0, easing: 'easeInSine' },
      { value: 0, duration: 200, delay: 1000, elasticity: 0, easing: 'easeOutSine' },
    ],
+   height: [
+      { value: 180, duration: 1000, delay: 200, elasticity: 0, easing: 'easeInSine' },
+      { value: 0, duration: 200, delay: 2000, elasticity: 0, easing: 'easeOutSine' },
+    ],
 });

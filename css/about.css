@@ -6,7 +6,6 @@ body {
   background: rgb(10, 10, 10);
   height: 700px;
   padding: 10px;
-  overflow: hidden;
   position: relative;
   top: 0;
   transition: all .6s .3s ease-out;
@@ -15,7 +14,7 @@ body {
 }
 
 #about.active {
-  top: -730px;
+  top: -800px;
   visibility: visible;
   z-index: 5;
   transition: all .5s .6s ease-in;
