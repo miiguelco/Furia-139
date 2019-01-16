@@ -98,12 +98,12 @@ a:hover {
 #main .slider {
   background: blue;
   z-index: 2;
-  padding: 70px 0 0 190px;
+  padding: 70px 0 0 200px;
 }
 
 #main .slider .img-slider {
-  width: 540px;
-  height: 490px;
+  width: 485px;
+  height: 500px;
   z-index: 3;
   border: 1px solid black;
 }
@@ -120,8 +120,8 @@ a:hover {
     bottom: 490px;
     right: 190px;
     z-index: 5;
-    background: pink;
-    opacity: .8;
+    /* background: pink;
+    opacity: .8; */
 }
 
 /* Container that allows manipulate arrow for right or left click on slider */
