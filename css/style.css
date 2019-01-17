@@ -4,7 +4,7 @@
 }
 
 body {
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 a {
@@ -54,50 +54,7 @@ a {
   max-width: 100%;
   /* background: purple; */
   display: grid;
-  grid-template-columns: 5% 30% 65%;
-}
-
-/* HAMBURGUER MENU */
-
-#main .menu {
-  /* background: lightblue; */
-  height: 10%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-
-#main .menu .bars {
-  width: 530px;
-  height: auto;
-  /* background: red; */
-  margin: 0 0 0 5px;
-  display: none;
-}
-
-#main .menu .bars .bar1 {
-  display: block;
-  background: black;
-  width: 30px;
-  height: 5px;
-  margin-bottom: 5px;
-}
-
-#main .menu .bars .bar2 {
-  display: block;
-  background: black;
-  width: 30px;
-  height: 5px;
-  margin-bottom: 5px;
-}
-
-#main .menu .bars .bar3 {
-  display: block;
-  background: black;
-  width: 30px;
-  height: 5px;
-  margin-bottom: 5px;
+  grid-template-columns: 30% 70%;
 }
 
 /* NAVIGATION */
@@ -108,10 +65,10 @@ a {
 }
 
 #main nav .nav-logo {
-  background: white;
+  /* background: white; */
   max-width: 150px;
   height: 130px;
-  margin: 70px auto 0 auto;
+  margin: 65px auto 0 auto;
 }
 
 #main nav .nav-logo img {
@@ -132,7 +89,9 @@ a {
   color: rgb(8, 8, 8);
   text-align: end;
   text-transform: uppercase;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Varela Round', sans-serif;
+  font-weight: 500;
+
 }
 
 a:hover {
@@ -152,7 +111,7 @@ a:hover {
   height: 500px;
   z-index: 3;
   border: 1px solid black;
-  margin: 70px 260px 0 auto;
+  margin: 70px auto 0 auto;
 }
 
 #main .slider .img-slider img {
@@ -166,8 +125,8 @@ a:hover {
     position: relative;
     bottom: 498px;
     z-index: 5;
-    /* background: pink;
-    opacity: .8; */
+    /* background: pink; */
+    opacity: .8;
 }
 
 /* Container that allows manipulate arrow for right or left click on slider */
@@ -199,26 +158,13 @@ cursor: e-resize;
 
 /* MEDIA QUERIES */
 
-@media (max-width: 1280px) {
-  #main {
-    grid-template-columns: 0 32% 68%;
-  }
-
 @media (max-width: 700px) {
   #main {
-    grid-template-columns: 12% 0 1fr;
+    grid-template-columns: 0 1fr;
   }
-  #main .menu .bars {
-    display: block;
-    margin-left: 20px;
+  #main nav .nav-links ul {
+    display: none;
   }
 
-  @media (max-width: 560px) {
-    #main {
-      grid-template-columns: 5% 0 1fr;
-    }
-    #main .menu .bars {
-      display: block;
-      margin-left: 57px;
-    }
+
 }
