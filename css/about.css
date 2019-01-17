@@ -14,7 +14,7 @@ body {
 }
 
 #about.active {
-  top: -800px;
+  top: -700px;
   visibility: visible;
   z-index: 5;
   transition: all .5s .6s ease-in;
