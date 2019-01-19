@@ -161,6 +161,7 @@ cursor: e-resize;
 
 /* MEDIA QUERIES */
 
+
 @media (max-width: 700px) {
   #main {
     grid-template-columns: 0 1fr;
@@ -176,31 +177,36 @@ cursor: e-resize;
   }
 }
 
-/* Ipad Pro */
-@media (height: 1366px) {
+/* Ipad portrait mode */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
   #main {
-    height: 1366px;
+    height: 1024px;
   }
   #main .slider {
     z-index: 2;
-    height: 1000px;
     position: relative;
-    top: 300px;
+    height: 1024px;
   }
   #main .slider .img-slider {
-    width: 650px;
-    height: 800px;
+    width: 485px;
+    height: 560px;
     z-index: 3;
     border: 1px solid black;
-    margin: 70px auto 0 auto;
+    margin: 266px auto 0 auto;
   }
   #main .slider .arrow-area {
-    height: 80%;
+    width: 100%;
+    height: 60%;
     position: relative;
-    bottom: 800px;
-    z-index: 5;
-    /* background: pink; */
-    opacity: .8;
+    bottom: 584px;
+  }
+  #main nav {
+    height: 1024px;
+    position: relative;
+    left: 10px;
   }
   #main nav .nav-logo {
     max-width: 180px;
@@ -212,30 +218,136 @@ cursor: e-resize;
  }
 }
 
-/* Ipad */
-@media (height: 1024px) {
+/* Ipad landscape mode */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+  #main .slider .img-slider {
+  width: 560px;
+  height: 590px;
+}
+#main .slider .arrow-area {
+  width: 100%;
+  height: 85%;
+  position: relative;
+  bottom: 591px;
+}
+#main nav .nav-logo {
+  max-width: 170px;
+  height: 145px;
+  margin: 65px auto 0 auto;
+}
+#main nav .nav-links {
+  max-width: 170px;
+  height: auto;
+  margin: 40px auto 0 auto;
+}
+#main nav .nav-links ul {
+  font-size: 25px;
+}
+
+}
+
+
+/* Ipad Pro portrait mode*/
+@media only screen
+and (min-device-width : 1024px)
+and (max-device-width : 1366px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation : portrait){
+  #main {
+    height: 1366px;
+  }
+  #main .slider {
+    z-index: 2;
+    position: relative;
+    right: 12px;
+    height: 1366px;
+  }
+  #main .slider .img-slider {
+    width: 675px;
+    height: 764px;
+    z-index: 3;
+    border: 1px solid black;
+    margin: 375px auto 0 auto;
+  }
+  #main .slider .arrow-area {
+    height: 62%;
+    position: relative;
+    bottom: 800px;
+    z-index: 5;
+  }
+  #main nav {
+    height: 1366px;
+  }
+  #main nav .nav-logo {
+    max-width: 220px;
+    height: 220px;
+  }
+
+  #main nav .nav-links {
+    max-width: 193px;
+    height: auto;
+    margin: 22px auto 0 auto;
+ }
+ #main nav .nav-links ul {
+  font-size: 32px;
+ }
+}
+
+/* Ipad Pro landscape mode */
+@media only screen
+and (min-device-width : 1024px)
+and (max-device-width : 1366px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation : landscape) {
   #main {
     height: 1024px;
   }
   #main .slider {
     z-index: 2;
     position: relative;
-    top: 220px;
+    right: 12px;
+    height: 1024px;
+    /* background: blue; */
   }
   #main .slider .img-slider {
-    width: 485px;
-    height: 560px;
+    width: 760px;
+    height: 860px;
     z-index: 3;
     border: 1px solid black;
-    margin: 70px auto 0 auto;
-  }
-  #main .slider .arrow-area {
+    margin: 90px auto 0 auto;
+ }
+#main .slider .arrow-area {
     width: 100%;
-    height: 80%;
+    height: 84%;
     position: relative;
-    bottom: 560px;
-  }
+    bottom: 859px;
+    z-index: 5;
+    /* background: pink;
+    opacity: .8; */
+ }
+ #main nav {
+   height: 1024px;
+ }
+ #main nav .nav-logo {
+   max-width: 200px;
+   height: 180px;
+   margin: 85px auto 0 auto;
+ }
+
+ #main nav .nav-links {
+    max-width: 192px;
+    height: auto;
+    margin: 40px auto 0 auto;
 }
+#main nav .nav-links ul {
+ font-size: 32px;
+}
+
+}
+
 
 /* Iphone x */
 
