@@ -9,6 +9,7 @@ html, body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 a {
@@ -84,14 +85,14 @@ a {
   /* background: brown; */
   max-width: 150px;
   height: auto;
-  margin: 30px auto 0 80px;
+  margin: 25px auto 0 80px;
 }
 
 #main nav .nav-links ul {
-  font-size: 16px;
+  font-size: 17px;
   line-height: 2.2;
   color: #8B8787;
-  text-transform: uppercase;
+  text-transform:  capitalize;
   font-family: 'Nunito', sans-serif;
   font-weight: 500;
 }
