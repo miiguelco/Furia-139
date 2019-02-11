@@ -7,17 +7,31 @@ body {
   height: 700px;
   padding: 10px;
   position: relative;
-  top: -700px;
+  top: 0;
   transition: all .6s .3s ease-out;
   z-index: 5;
+  visibility: hidden;
+}
+
+#about.active {
+  top: -700px;
   visibility: visible;
+  z-index: 5;
+  transition: all .5s .6s ease-in;
 }
 
 #about .top-container {
-  width: 92%;
-height: 90px;
-border-bottom: 1px solid grey;
-margin-left: 4%;
+  width: 82%;
+  height: 94px;
+  border-bottom: 1px solid grey;
+  margin-left: 9%;
+  opacity: 1;
+  transition: all 1s .4s ease-out;
+}
+
+#about.active .top-container {
+  opacity: 1;
+  transition: all 1.8s .6s ease-in;
 }
 
 #about .top-container .about-logo {
@@ -27,6 +41,7 @@ margin-left: 4%;
   float: right;
   position: relative;
   top: 10px;
+  cursor: pointer;
 }
 
 #about .top-container .about-logo img {
@@ -35,84 +50,49 @@ margin-left: 4%;
 }
 
 
-
-#about.active {
-  top: -700px;
-  visibility: visible;
-  z-index: 5;
-  transition: all .5s .6s ease-in;
+#about .wrapper {
+  height: 625px;
+  width: 82%;
+  margin-left: 9%;
+  display: grid;
+  grid-template-columns: 45% 55%;
+  opacity: 0;
+  transition: all 1s .5s ease-out;
 }
 
-#about .portrait {
-  display: inline-block;
-  float: left;
-  position: relative;
-  left: 100px;
-  top: 22px;
-  height: 475px;
-  width: 400px;
+#about.active .wrapper {
+  opacity: 1;
+  transition: all 1.8s .6s ease-in;
+}
+
+#about .portrait .portrait-wrapper {
+  height: 435px;
+  width: 340px;
   border: 1px solid white;
   opacity: 1;
-  transition: all .1s .1s ease-out;
+  margin: 2em auto;
 }
 
-#about.active .portrait {
+#about .portrait .portrait-wrapper img {
+    height: 100%;
+    width: 100%;
+}
+
+#about .bio .paragraph-wrapper {
+  width: 95%;
+  max-height: 500px;
   opacity: 1;
-  transition:  all 1s .4s ease-in;
+  margin: 2em auto;
 }
 
-
-#about .portrait .back-icon {
-  width: 10%;
-  position: relative;
-  left: 500px;
-  top: 10px;
-  font-size: 40px;
-  text-align: center;
-}
-
-#about .portrait .back-icon .fa{
-  cursor: pointer;
-  color: white;
-}
-
-#about .portrait .back-icon .fa:hover {
-  color: rgb(214, 214, 214);
-}
-
-
-#about .portrait img {
-  height: 100%;
-  width: 100%;
-}
-
-#about .bio {
-  display: inline-block;
-  float: right;
-  padding-right: 50px;
-  height: 500px;
-  width: 52%;
-  opacity: 1;
-  transition:  all .1s .1s ease-out;
-}
-
-#about.active .bio {
-  opacity: 1;
-  transition:  all 1s .4s ease-in;
-}
-
-#about .bio h2{
-  font-size: 50px;
-  font-weight: bolder;
-  margin-top: 70px;
-  margin-bottom: 20px;
-  color: white;
-}
-
-#about .bio p{
-  font-size: 18px;
-  line-height: 1.7;
-  color: white;
+#about .bio .paragraph-wrapper span {
+  font-size: 1.8em;
   font-family: 'Open Sans', sans-serif;
+}
 
+#about .bio .paragraph-wrapper p{
+  font-size: 1.1em;
+  line-height: 1.8;
+  color: white;
+  font-family: 'Nunito', sans-serif;
 }

@@ -60,9 +60,8 @@ var retrato = document.getElementsByClassName('.portrait-img');
 
 function aboutClick() {
   aboutScreenEl.classList.toggle('active');
-
 }
 
-function arrowClick() {
+function logoClick() {
   aboutScreenEl.classList.remove('active');
 }

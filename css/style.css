@@ -31,7 +31,7 @@ a {
 #front-cover .logo-front-cover {
   position: relative;
   top: 32%;
-  left: 35%;
+  left: 38%;
   opacity: 0;
   width: 290px;
   height: 180px;
@@ -89,16 +89,16 @@ a {
 }
 
 #main nav .nav-links ul {
-  font-size: 17px;
+  font-size: 18px;
   line-height: 2.2;
-  color: #8B8787;
+  color: #242424;
   text-transform:  capitalize;
   font-family: 'Nunito', sans-serif;
   font-weight: 500;
 }
 
 a:hover {
-  color: rgb(0, 0, 0);
+  color: rgb(147, 147, 147);
 }
 
 #main nav .click-slider {
@@ -110,10 +110,11 @@ a:hover {
   margin: auto 0 auto 80px;
   font-size: 14px;
   line-height: 2.2;
-  color: #8B8787;
+  color: #0e0e0e;
   text-transform: uppercase;
   font-family: 'Nunito', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
+  cursor: pointer;
 }
 
 #main nav .click-slider li{

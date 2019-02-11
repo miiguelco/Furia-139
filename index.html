@@ -39,7 +39,7 @@
               <div class="click-slider">
                   <ul>
                       <li>Prev</li>
-                      <li style="color:rgb(28, 28, 28);">/</li>
+                      <li style="color:rgb(28, 28, 28);cursor:default">/</li>
                       <li>Next</li>
                   </ul>
               </div>
@@ -103,26 +103,28 @@
       <div id="about">
           <div class="top-container">
               <div class="about-logo">
-                  <img src="images/furialogo.png">
+                  <img src="images/furialogo.png" onclick="logoClick()">
               </div>
           </div>
-          <div class="portrait">
-              <img class="portrait-img" src="images/furia.jpeg" alt="portrait" onclick="aboutClick()">
-              <div class="back-icon">
-                <i class="fa fa-angle-down" onclick="arrowClick()"></i>
+          <div class="wrapper">
+              <div class="portrait">
+                  <div class="portrait-wrapper">
+                      <img class="portrait-img" src="images/furia.jpeg" alt="portrait" onclick="aboutClick()">
+                  </div>
               </div>
-          </div>
-          <div class="bio">
-              <h2>Hello,</h2>
-              <p>Isaac Branco, also known as furia139, is a Portuguese artist residing in London, U.K.
-                Since an early age, his passion for the arts was nurtured by his parents which, ultimately, culminated in a Fine Arts degree.
-                The love and passion for realism led him to study and copy the great masters of the past  and to understand the evolution of techniques and ideas of the ones of the present.
-                After an apprenticeship in one of the best tattoo shops in London, Isaac progressed to develop his own style of black and grey tattoos.
-                Dark tones and bright light sources combine to create images that emerge from skin bringing to life the subject matter.
-
-                Contact
-                If you want Isaac to bring your ideas to life, please use one of the available contacts bellow.
-              </p>
+              <div class="bio">
+                  <div class="paragraph-wrapper">
+                      <p><span>Isaac Branco</span>, also known as furia139, is a Portuguese artist residing in London, U.K.
+                        Since an early age, his passion for the arts was nurtured by his parents which, ultimately, culminated in a Fine Arts degree.
+                        The love and passion for realism led him to study and copy the great masters of the past  and to understand the evolution of techniques and ideas of the ones of the present.
+                        After an apprenticeship in one of the best tattoo shops in London, Isaac progressed to develop his own style of black and grey tattoos.
+                        Dark tones and bright light sources combine to create images that emerge from skin bringing to life the subject matter.<br>
+                        <br>
+                        Contact
+                        If you want Isaac to bring your ideas to life, please use one of the available contacts bellow.
+                      </p>
+                  </div>
+              </div>
           </div>
       </div>
 
