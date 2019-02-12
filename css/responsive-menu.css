@@ -8,15 +8,16 @@ body {
 
 #menu {
   background: lightblue;
-  width: 20%;
-  height: 700px;
+  width: 100%;
+  height: 10%;
+  /*
   position: absolute;
   z-index: 3;
-  bottom: -79px;
+  bottom: -79px; */
 }
 
 #hamburguer-container {
-  /* background: black; */
+  background: black;
   height: 60px;
   width: 20%;
   position: absolute;
@@ -47,7 +48,7 @@ body {
 
 /* Media Queries */
 
-@media (max-width: 1366px) {
+/* @media (max-width: 1366px) {
   #menu {
     width: 0;
   }
@@ -71,4 +72,4 @@ body {
     #hamburguer-container .bar1, .bar2, .bar3 {
       width: 30px;
     }
-  }
+  } */

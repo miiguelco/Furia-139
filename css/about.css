@@ -76,12 +76,12 @@
 }
 
 #about .bio .paragraph-wrapper {
-  width: 100%;
+  width: 115%;
   height: 420px;
   opacity: 1;
   margin: .5em auto;
   /* background: orange; */
-  padding: 5%;
+  padding: 4% 10% 5% 5%;
 }
 
 #about .bio .paragraph-wrapper span {
@@ -91,7 +91,7 @@
 
 #about .bio .paragraph-wrapper p{
   font-size: 2.7vh;
-  line-height: 1.6;
+  line-height: 1.8;
   font-weight: lighter;
   word-spacing: 2px;
   color: white;
@@ -101,13 +101,32 @@
 
 /* MEDIA QUERIES */
 
+@media (max-width: 1052px) {
+  #about .bio .paragraph-wrapper p {
+    font-size: 17px;
+    line-height: 1.6;
+  }
+}
+
 @media (max-width: 1000px) {
   #about .portrait .portrait-wrapper {
     height: 40vw;
     width: 30vw;
     margin-left: 2em;
    }
+   #about .bio .paragraph-wrapper p {
+     font-size: 16px;
+     line-height: 1.5;
+   }
 }
+
+@media (max-width: 810px) {
+  #about .bio .paragraph-wrapper p {
+  font-size: 16px;
+  line-height: 1.4;
+ }
+}
+
 
  @media (max-width: 768px) {
   #about .top-container .about-logo {
@@ -121,6 +140,7 @@
     visibility: hidden;
   }
   #about .bio .paragraph-wrapper {
+    width: 100%;
     margin-left: 20px;
     padding: 0;
   }
@@ -128,4 +148,30 @@
     font-size: 2.8vh;
     line-height: 1.8;
   }
+}
+
+@media (max-width: 605px) {
+  #about .bio .paragraph-wrapper p {
+  font-size: 17px;
+  line-height: 1.6;
+ }
+}
+
+@media (max-width: 540px) {
+  #about .bio .paragraph-wrapper p {
+  font-size: 16px;
+  line-height: 1.5;
+ }
+}
+
+@media (max-width: 460px) {
+  #about .top-container .about-logo {
+    float: none;
+    margin: auto 35%;
+   }
+  #about .bio .paragraph-wrapper p {
+  font-size: 15px;
+  line-height: 1.6;
+  text-align: left;
+ }
 }

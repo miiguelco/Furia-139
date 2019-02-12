@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/about.css">
-    <link rel="stylesheet" href="css/responsive-menu.css">
+    <!-- <link rel="stylesheet" href="css/responsive-menu.css"> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400i|Source+Sans+Pro:400i" rel="stylesheet">
@@ -24,80 +24,95 @@
       <section id="main">
           <!-- Black div that covers index page on initial animation -->
           <div class="black-cover"></div>
-          <!-- Navigation bar  -->
-          <nav>
-              <div class="nav-logo">
+          <!-- Responsive menu -->
+          <div class="rep-menu">
+              <div class="burguer-container">
+                  <div class="bars">
+                      <div class="bar1"></div>
+                      <div class="bar2"></div>
+                      <div class="bar3"></div>
+                  </div>
+              </div>
+              <div class="menu-links">
+                  <ul>
+                      <li>About</li>
+                      <li>Instagram</li>
+                      <li>Contact</li>
+                  </ul>
+              </div>
+              <div class="menu-logo">
                   <img src="images/logofuria.jpeg">
               </div>
-              <div class="nav-links">
-                  <ul>
-                      <li class="about" onclick="aboutClick()"><a href="#">about</a></li>
-                      <li class="insta"><a href="https://www.instagram.com/furia139" target="_blank">instagram</a></li>
-                      <li><a href="mailto: furia@gmail.com">contact</a></li>
-                  </ul>
-              </div>
-              <div class="click-slider">
-                  <ul>
-                      <li>Prev</li>
-                      <li style="color:rgb(28, 28, 28);cursor:default">/</li>
-                      <li>Next</li>
-                  </ul>
-              </div>
-          </nav>
-           <!-- Slider Container -->
-          <div class="slider">
-              <!-- Container that allows arrow manipulation -->
-              <div class="img-slider">
-                  <img src="images/9.jpg" alt="Tattoo art picture number 1">
-              </div>
-              <div class="img-slider">
-                  <img src="images/3.jpg" alt="Tattoo art picture number 2">
-              </div>
-              <div class="img-slider">
-                  <img src="images/4.jpg" alt="Tattoo art picture number 3">
-              </div>
-              <div class="img-slider">
-                  <img src="images/5.jpg" alt="Tattoo art picture number 4">
-              </div>
-              <div class="img-slider">
-                  <img src="images/6.jpg" alt="Tattoo art picture number 5">
-              </div>
-              <div class="img-slider">
-                  <img src="images/7.jpg" alt="Tattoo art picture number 6">
-              </div>
-              <div class="img-slider">
-                  <img src="images/8.jpg" alt="Tattoo art picture number 7">
-              </div>
-              <div class="img-slider">
-                  <img src="images/2.jpg" alt="Tattoo art picture number 8">
-              </div>
-              <div class="img-slider">
-                  <img src="images/10.jpg" alt="Tattoo art picture number 9">
-              </div>
-              <div class="img-slider">
-                  <img src="images/11.jpg" alt="Tattoo art picture number 10">
-              </div>
-              <div class="img-slider">
-                  <img src="images/12.jpg" alt="Tattoo art picture number 11">
-              </div>
-              <div class="img-slider">
-                  <img src="images/13.jpg" alt="Tattoo art picture number 12">
-              </div>
-              <div class="arrow-area">
-                  <div class="arrow-left"></div>
-                  <div class="arrow-right"></div>
+
+          </div>
+          <!-- NAV PLUS SLIDER WRAPPPER -->
+          <div class="navslider-wrapper">
+              <!-- Navigation bar  -->
+              <nav>
+                  <div class="nav-logo">
+                      <img src="images/logofuria.jpeg">
+                  </div>
+                  <div class="nav-links">
+                      <ul>
+                          <li class="about" onclick="aboutClick()"><a href="#">about</a></li>
+                          <li class="insta"><a href="https://www.instagram.com/furia139" target="_blank">instagram</a></li>
+                          <li><a href="mailto: furia@gmail.com">contact</a></li>
+                      </ul>
+                  </div>
+                  <div class="click-slider">
+                      <ul>
+                          <li>Prev</li>
+                          <li style="color:rgb(28, 28, 28);cursor:default">/</li>
+                          <li>Next</li>
+                      </ul>
+                  </div>
+              </nav>
+               <!-- Slider Container -->
+              <div class="slider">
+                  <!-- Container that allows arrow manipulation -->
+                  <div class="img-slider">
+                      <img src="images/9.jpg" alt="Tattoo art picture number 1">
+                  </div>
+                  <div class="img-slider">
+                      <img src="images/3.jpg" alt="Tattoo art picture number 2">
+                  </div>
+                  <div class="img-slider">
+                      <img src="images/4.jpg" alt="Tattoo art picture number 3">
+                  </div>
+                  <div class="img-slider">
+                      <img src="images/5.jpg" alt="Tattoo art picture number 4">
+                  </div>
+                  <div class="img-slider">
+                      <img src="images/6.jpg" alt="Tattoo art picture number 5">
+                  </div>
+                  <div class="img-slider">
+                      <img src="images/7.jpg" alt="Tattoo art picture number 6">
+                  </div>
+                  <div class="img-slider">
+                      <img src="images/8.jpg" alt="Tattoo art picture number 7">
+                  </div>
+                  <div class="img-slider">
+                      <img src="images/2.jpg" alt="Tattoo art picture number 8">
+                  </div>
+                  <div class="img-slider">
+                      <img src="images/10.jpg" alt="Tattoo art picture number 9">
+                  </div>
+                  <div class="img-slider">
+                      <img src="images/11.jpg" alt="Tattoo art picture number 10">
+                  </div>
+                  <div class="img-slider">
+                      <img src="images/12.jpg" alt="Tattoo art picture number 11">
+                  </div>
+                  <div class="img-slider">
+                      <img src="images/13.jpg" alt="Tattoo art picture number 12">
+                  </div>
+                  <div class="arrow-area">
+                      <div class="arrow-left"></div>
+                      <div class="arrow-right"></div>
+                  </div>
               </div>
           </div>
       </section>
-      <!-- Responsive menu -->
-      <div id="menu"></div>
-      <div id="hamburguer-container">
-            <div class="bars">
-              <div class="bar1"></div>
-              <div class="bar2"></div>
-              <div class="bar3"></div>
-            </div>
-      </div>
 
       <!-- About me scroll up page -->
       <div id="about">
