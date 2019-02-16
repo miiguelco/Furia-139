@@ -60,22 +60,24 @@ a {
   /* background: purple; */
 }
 
-/* RESPONSIVE MENU */
+/* RESPONSIVE MENU ACITVE */
 
 #main .rep-menu {
   width: 100%;
-  height: 10%;
-  background: lightblue;
+  height: 0;
+  /* height: 10%; */
+  /* background: lightblue; */
 }
 
 #main .rep-menu .burguer-container {
-  background: black;
-  height: 60px;
+  /* background: black; */
+  height: 0;
+  /* height: 60px; */
   width: 20%;
   display: inline-block;
   float: left;
   position: absolute;
-  top: 10px;
+  top: 15px;
   z-index: 4;
   display: flex;
   justify-content: center;
@@ -87,24 +89,26 @@ a {
   height: 50px;
   /* background: pink; */
   z-index: 4;
+  visibility: hidden;
 }
 
 #main .rep-menu .burguer-container .bars  .bar1, .bar2, .bar3 {
   width: 25px;
   height: 3px;
-  background-color: white;
+  background-color: black;
   margin: 6px 0;
   position: relative;
   left: 10px;
   top: 5px;
   z-index: 4;
+  visibility: hidden;
 }
 
 /* MENU LINKS IN RESPONSIVE ACTIVE */
 
 #main .rep-menu .menu-links {
   background: black;
-  height: 60px;
+  height: 0;
   width: 20%;
   display: inline-block;
   position: relative;
@@ -120,6 +124,9 @@ a {
   font-size: 15px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
+  visibility: hidden;
+  position: absolute;
+  background: orange;
 }
 
 #main .rep-menu .menu-links ul li {
@@ -128,8 +135,9 @@ a {
 }
 
 #main .rep-menu .menu-logo {
-  max-width: 100px;
-  height: 60px;
+  max-width: 85px;
+  height: 0px;
+  /* height: 60px; */
   display: inline-block;
   float: right;
   margin-top: 10px;
@@ -141,14 +149,12 @@ a {
 }
 
 
-
-
 /* WRAPPER */
 #main .navslider-wrapper {
   height: 700px;
   max-width: 100%;
   display: grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 20% 90%;
 }
 
 /* NAVIGATION */
@@ -156,6 +162,7 @@ a {
 #main nav {
   /* background: yellow; */
   height: 800px;
+  padding-left: 20%;
 }
 
 #main nav .nav-logo {
@@ -273,20 +280,23 @@ cursor: e-resize;
 
 @media (max-width: 800px) {
   #main .navslider-wrapper  nav .nav-logo {
-    margin: 45px auto 0 25px;
+    margin: 45px auto 0 auto;
   }
   #main .navslider-wrapper nav .nav-links {
-    margin: 25px auto 0 25px;
+    margin: 25px auto 0 auto;
   }
   #main .navslider-wrapper  nav .click-slider {
-    margin: 285px auto 0 25px;
-
+    margin: 285px auto 0 auto;
+  }
+  #main .navslider-wrapper {
+    grid-template-columns: 30% 80%;
   }
 }
 
 @media (max-width: 700px) {
   #main .navslider-wrapper {
     grid-template-columns: 0 1fr;
+    margin: 1%;
   }
   #main .navslider-wrapper nav .nav-links ul {
     display: none;
@@ -294,11 +304,46 @@ cursor: e-resize;
   #main .navslider-wrapper .click-slider {
     display: none;
   }
+  #main .slider {
+    /* background: blue */
+  }
+  #main .slider .img-slider {
+    width: 60vh;
+    height: 85vh;
+    z-index: 3;
+    border: 1px solid rgb(175, 175, 175);
+    margin: 5px auto;
+  }
+  #main .rep-menu {
+    height: 10%;
+  }
+  #main .rep-menu .burguer-container {
+    height: 55px;
+  }
+  #main .rep-menu .burguer-container .bars {
+    visibility: visible;
+    margin-top: 10%;
+  }
+  #main .rep-menu .burguer-container .bars  .bar1, .bar2, .bar3 {
+    visibility: visible;
+  }
+  #main .rep-menu .menu-links {
+
+  }
+  #main .rep-menu .menu-links ul {
+
+  }
+  #main .rep-menu .menu-logo {
+    height: 60px;
+    margin-right: 2%;
+  }
 }
 
-@media (max-width: 375px) {
-  #main .navslider-wrapper  .slider {
-    width: 875px;
+@media (max-width: 700px) {
+    #main .navslider-wrapper {
+    grid-template-columns: 0 1fr;
+    margin: 1%;
+    width: 100%;
   }
 }
 

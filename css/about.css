@@ -81,7 +81,7 @@
   opacity: 1;
   margin: .5em auto;
   /* background: orange; */
-  padding: 4% 10% 5% 5%;
+  padding: 2% 15% 1% 2%;
 }
 
 #about .bio .paragraph-wrapper span {
@@ -171,7 +171,6 @@
    }
   #about .bio .paragraph-wrapper p {
   font-size: 15px;
-  line-height: 1.6;
-  text-align: left;
+  line-height: 1.5;
  }
 }
