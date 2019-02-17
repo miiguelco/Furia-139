@@ -65,3 +65,15 @@ function aboutClick() {
 function logoClick() {
   aboutScreenEl.classList.remove('active');
 }
+
+
+// RESPONSIVE MENU
+
+let burgerMenu = document.querySelector('.burguer-container');
+let navLinks = document.querySelector('.menu-links');
+let ulNavLinks = document.querySelector('.ul-navlinks');
+
+function burgerClick() {
+  navLinks.style.width = "221px";
+  navLinks.style.height = "43%";
+}
