@@ -4,7 +4,7 @@
   height: 700px;
   padding: 10px;
   position: relative;
-  top: 0;
+  top: 440px;
   transition: all .6s .3s ease-out;
   z-index: 5;
   visibility: hidden;
@@ -101,26 +101,14 @@
 
 /* MEDIA QUERIES */ /* MEDIA QUERIES */ /* MEDIA QUERIES */ /* MEDIA QUERIES */ /* MEDIA QUERIES */ /* MEDIA QUERIES */
 
-/* IPAD PORTRAIT  */
-@media only screen
-and (device-width: 768px)
-and (device-height: 1024px)
-and (orientation:portrait) {
-  #about {
-    height: 1127px;
-    width: 110%;
-    top: 500px;
-  }
-}
 
-/* IPAD LANDSCAPE  */
-
-/* OTHER MEDIA QUERIES */
-
-@media (max-width: 1052px) {
+@media  (max-width: 1052px) {
   #about .bio .paragraph-wrapper p {
-    font-size: 17px;
+    font-size: 19px;
     line-height: 1.6;
+  }
+  #about .wrapper {
+    grid-template-columns: 49% 55%;
   }
 }
 
