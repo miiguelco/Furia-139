@@ -72,8 +72,52 @@ function logoClick() {
 let burgerMenu = document.querySelector('.burguer-container');
 let navLinks = document.querySelector('.menu-links');
 let ulNavLinks = document.querySelector('.ul-navlinks');
+let linksToHide = document.getElementsByTagName('li');
+let barOne = document.querySelector('.bar1');
+let barTwo = document.querySelector('.bar2');
+let barThree = document.querySelector('.bar3');
 
 function burgerClick() {
-  navLinks.style.width = "221px";
-  navLinks.style.height = "43%";
+
+  if (barTwo.style.width === "25px") {
+
+    // links visible
+    linksToHide[0].style.display = "inline-block";
+    linksToHide[1].style.display = "inline-block";
+    linksToHide[2].style.display = "inline-block";
+
+    // ul container width animation
+    ulNavLinks.style.maxWidth = "280px";
+    ulNavLinks.style.width = "265px";
+    // bar one style to cross
+    barOne.style.width = "40px";
+    barOne.style.top = "25px";
+    barOne.style.transform = "rotate(45deg)";
+    // bar two style to cross
+    barTwo.style.width = "0px";
+    //bar three style to cross
+    barThree.style.width = "40px";
+    barThree.style.top = "3px";
+    barThree.style.left = "11px";
+    barThree.style.transform = "rotate(-45deg)";
+ }
+ else {
+   // links hidden
+   linksToHide[0].style.display = "none";
+   linksToHide[1].style.display = "none";
+   linksToHide[2].style.display = "none";
+   // ul container width animation
+   ulNavLinks.style.maxWidth = "0px";
+   // bar one style to cross
+   barOne.style.width = "25px";
+   barOne.style.top = "13px";
+   barOne.style.transform = "rotate(0deg)";
+   // bar two style to cross
+   barTwo.style.width = "25px";
+   //bar three style to cross
+   barThree.style.width = "25px";
+   barThree.style.top = "13px";
+   barThree.style.left = "12px";
+   barThree.style.transform = "rotate(0deg)";
+  }
 }

@@ -23,12 +23,12 @@
   border-bottom: 1px solid grey;
   margin-left: 9%;
   opacity: 1;
-  transition: all 1s .4s ease-out;
+  transition: all ease-out;
 }
 
 #about.active .top-container {
   opacity: 1;
-  transition: all 1.8s .6s ease-in;
+  transition: all .8s .6s ease-in;
 }
 
 #about .top-container .about-logo {
@@ -99,7 +99,23 @@
 }
 
 
-/* MEDIA QUERIES */
+/* MEDIA QUERIES */ /* MEDIA QUERIES */ /* MEDIA QUERIES */ /* MEDIA QUERIES */ /* MEDIA QUERIES */ /* MEDIA QUERIES */
+
+/* IPAD PORTRAIT  */
+@media only screen
+and (device-width: 768px)
+and (device-height: 1024px)
+and (orientation:portrait) {
+  #about {
+    height: 1127px;
+    width: 110%;
+    top: 500px;
+  }
+}
+
+/* IPAD LANDSCAPE  */
+
+/* OTHER MEDIA QUERIES */
 
 @media (max-width: 1052px) {
   #about .bio .paragraph-wrapper p {

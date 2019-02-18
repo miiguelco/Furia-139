@@ -1,0 +1,28 @@
+/* Ipad portrait mode */
+
+@media only screen
+and (device-width: 768px)
+and (device-height: 1024px)
+and (orientation:portrait) {
+  #main .slider .img-slider {
+    width: 600px;
+    height: 880px;
+    margin: 160px 0 auto;
+ }
+ #main .navslider-wrapper nav .click-slider {
+    margin: 734px auto 0 auto;
+ }
+ #main .slider .arrow-area .arrow-left {
+    width: 50%;
+    height: 164%;
+    background: transparent;
+    position: relative;
+    bottom: 340px;
+  }
+  #main .slider .arrow-area .arrow-right {
+     width: 50%;
+     height: 164%;
+     background: transparent;
+     position: relative;
+     bottom: 340px;
+   }
