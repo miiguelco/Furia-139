@@ -5,6 +5,8 @@ let slides = document.getElementsByClassName('img-slider'); // selects all image
 let leftSideArrow = document.querySelector('.arrow-left'); // Select left side div of arrow area
 let rightSideArrow = document.querySelector('.arrow-right'); // Select right side div of arrow area
 let current = 0; // Represents the image we are on, and it's 0 by default
+let prevLi = document.querySelector('.previous'); // selects li with prev
+let nextLi = document.querySelector('.next'); // selects li with next
 
 // Clears all images
 function reset() {
@@ -41,8 +43,26 @@ leftSideArrow.addEventListener('click', function () {
   slideLeft();
 });
 
+// Prev li click event
+prevLi.addEventListener('click', function () {
+  if (current === 0) {
+    current = slides.length;
+  }
+  slideLeft();
+});
+
 // Right arrow click event
 rightSideArrow.addEventListener('click', function () {
+  if (current === slides.length - 1) {
+    current = -1;
+  }
+  slideRight();
+});
+
+strartSlide();
+
+// next li click event
+nextLi.addEventListener('click', function () {
   if (current === slides.length - 1) {
     current = -1;
   }

@@ -1,17 +1,17 @@
 
 #about {
   background: rgb(10, 10, 10);
-  height: 700px;
+  min-height: 700px;
   padding: 10px;
   position: relative;
-  top: 440px;
+  top: 0;
   transition: all .6s .3s ease-out;
   z-index: 5;
-  visibility: hidden;
+  /* visibility: hidden; */
 }
 
 #about.active {
-  top: -700px;
+  margin-top: -700px;
   visibility: visible;
   z-index: 5;
   transition: all .5s .6s ease-in;
@@ -48,12 +48,12 @@
 
 
 #about .wrapper {
-  height: 625px;
+  min-height: 625px;
   width: 82%;
-  margin-left: 7%;
+  margin-left: 9%;
   display: grid;
   grid-template-columns: 45% 55%;
-  opacity: 0;
+  opacity: 1;
   transition: all 1s .5s ease-out;
 }
 
@@ -80,7 +80,6 @@
   height: 420px;
   opacity: 1;
   margin: .5em auto;
-  /* background: orange; */
   padding: 2% 15% 1% 2%;
 }
 
@@ -102,15 +101,12 @@
 /* MEDIA QUERIES */ /* MEDIA QUERIES */ /* MEDIA QUERIES */ /* MEDIA QUERIES */ /* MEDIA QUERIES */ /* MEDIA QUERIES */
 
 
-@media  (max-width: 1052px) {
+/* @media  (max-width: 1052px) {
   #about .bio .paragraph-wrapper p {
     font-size: 19px;
     line-height: 1.6;
   }
-  #about .wrapper {
-    grid-template-columns: 49% 55%;
-  }
-}
+} */
 
 @media (max-width: 1000px) {
   #about .portrait .portrait-wrapper {

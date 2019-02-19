@@ -1,21 +1,31 @@
 
 /* IPAD PRO */ /* IPAD PRO */ /* IPAD PRO */ /* IPAD PRO */ /* IPAD PRO */ /* IPAD PRO */ /* IPAD PRO */ /* IPAD PRO */
 
-/* Landscape */
+/* ipad pro Landscape */
 @media only screen
 and (device-width: 1366px)
 and (device-height: 1024px)
 and (orientation:landscape) {
+  #front-cover {
+    width: 1505px;
+  }
+  #main .black-cover {
+    width: 1505px;
+  }
+  #front-cover .logo-front-cover {
+    top: 42%;
+    left: 35%;
+    width: 400px;
+    height: 380px;
+  }
   #about {
     width: 1505px;;
     height: 1130px;
+    margin-top: 430px;
   }
   #about.active {
     height: 1130px;
     width: 1505px;
-  }
-  #about .wrapper {
-    grid-template-columns: 49% 52%;
   }
   #main .slider .img-slider {
     width: 780px;
@@ -30,6 +40,56 @@ and (orientation:landscape) {
  }
 }
 
+/* ipad pro Portrait */
+@media only screen
+and (device-width: 1024px)
+and (device-height: 1366px)
+and (orientation:portrait) {
+  #about {
+    width: 1505px;;
+    height: 1706px;
+    margin-top: 1315px;
+  }
+  #about.active {
+    height: 2010px;
+    width: 1505px;
+  }
+  #main .slider {
+    height: 1600px;
+ }
+ #about.active .wrapper {
+   height: 1580px;
+   display: block;
+ }
+ #about.active .wrapper .portrait {
+   display: none;
+ }
+ #about .bio .paragraph-wrapper {
+    max-width: 215%;
+    height: 100%;
+    opacity: 1;
+    margin: .5em auto;
+    padding: 2% 15% 1% 2%;
+    background: blue;
+ }
+ #main .slider .img-slider {
+   width: 1000px;
+   height: 1350px;
+   margin: 360px auto 0 200px;
+ }
+#main .navslider-wrapper nav .click-slider {
+   margin: 1500px auto 0 auto;
+ }
+ #main nav .nav-logo {
+   height: 120px;
+ }
+ #main nav .nav-links ul {
+   font-size: 32px;
+ }
+ #main nav .click-slider ul {
+   font-size: 25px;
+ }
+}
 
 
 
@@ -45,10 +105,12 @@ and (orientation:landscape) {
   #about {
     width: 1126px;
     height: 845px;
+    margin-top: 145px;
   }
   #about.active {
     height: 845px;
     width: 1126px;
+    margin-top: -850px;
   }
   #about .wrapper {
     grid-template-columns: 49% 55%;
@@ -92,13 +154,16 @@ and (orientation:portrait) {
     left: 32%;
   }
   #about {
+    height: 1135px;
     width: 850px;
-    height: 1100px;
+    margin-top: 445px;
   }
   #about.active {
+    height: 1135px;
     width: 850px;
-    height: 1150px;
+    margin-top: -845px;
   }
+
   #main .slider .img-slider {
     width: 590px;
     height: 880px;
