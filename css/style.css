@@ -8,8 +8,8 @@
   height: 100%;
   margin: 0;
   padding: 0;
-  /* overflow-x: hidden;
-  overflow-y: hidden; */
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 a {
@@ -30,7 +30,7 @@ a {
 
 #front-cover .logo-front-cover {
   position: relative;
-  top: 32%;
+  top: 20%;
   left: 36%;
   opacity: 0;
   width: 290px;
@@ -210,7 +210,7 @@ color: white;
 }
 
 a:hover {
-  color: rgb(147, 147, 147);
+  color: rgb(163, 163, 163);
 }
 
 #main nav .click-slider {

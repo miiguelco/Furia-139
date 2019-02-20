@@ -62,6 +62,10 @@
   transition: all 1.8s .6s ease-in;
 }
 
+/* #about.active .wrapper .bio {
+  width: 1200px;
+} */
+
 #about .portrait .portrait-wrapper {
   height: 65vh;
   width: 50vh;
@@ -76,7 +80,7 @@
 }
 
 #about .bio .paragraph-wrapper {
-  width: 115%;
+  width: 120%;
   height: 420px;
   opacity: 1;
   margin: .5em auto;

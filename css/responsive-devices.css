@@ -1,4 +1,76 @@
 
+/* IPHONE */  /* IPHONE */  /* IPHONE */  /* IPHONE */  /* IPHONE */  /* IPHONE */  /* IPHONE */  /* IPHONE */
+
+/* iphone x portrait mode */
+
+@media only screen
+and (device-width: 375px)
+and (device-height: 812px)
+and (orientation:portrait) {
+  #front-cover {
+    width: 370px;
+  }
+  #main .black-cover {
+    width: 370px;
+  }
+  #front-cover .logo-front-cover {
+    top: 42%;
+    left: 38%;
+  }
+   #main .slider .img-slider {
+     width: 48vh;
+     height: 75vh;
+     z-index: 3;
+     border: 1px solid rgb(175, 175, 175);
+     margin: 30px 13px;
+  }
+  #main .slider .arrow-area {
+    bottom: 558px;
+
+  }
+  #main .rep-menu .menu-logo .logo-wrapper {
+    margin-right: 0;
+    margin-top: 16px;
+  }
+  #about {
+    width: 426px;;
+    height: 812px;
+    margin-top: 221px;
+  }
+  #about.active {
+    width: 426px;;
+    height: 921px;
+  }
+  #about .bio .paragraph-wrapper {
+  width: 90%;
+  }
+  #about .bio .paragraph-wrapper p {
+    visibility: hidden;
+  }
+  #about.active .bio .paragraph-wrapper p {
+    font-size: 19px;
+    visibility: visible;
+    margin-right: 20px;
+  }
+}
+
+/* iphone x landscape mode */
+
+@media only screen
+and (device-width: 812px)
+and (device-height: 375px)
+and (orientation:landscape) {
+  #main .slider .img-slider {
+    width: 270px;
+    height: 340px;
+ }
+ #main .navslider-wrapper nav .click-slider {
+    margin: 80px auto 0 auto;
+  }
+}
+
+
+
 /* IPAD PRO */ /* IPAD PRO */ /* IPAD PRO */ /* IPAD PRO */ /* IPAD PRO */ /* IPAD PRO */ /* IPAD PRO */ /* IPAD PRO */
 
 /* ipad pro Landscape */
@@ -14,9 +86,7 @@ and (orientation:landscape) {
   }
   #front-cover .logo-front-cover {
     top: 42%;
-    left: 35%;
-    width: 400px;
-    height: 380px;
+    left: 38%;
   }
   #about {
     width: 1505px;;
@@ -46,32 +116,59 @@ and (device-width: 1024px)
 and (device-height: 1366px)
 and (orientation:portrait) {
   #about {
-    width: 1505px;;
-    height: 1706px;
-    margin-top: 1315px;
+    height: 2115px;
+    width: 1585px;
+    margin-top: 1420px;
   }
   #about.active {
-    height: 2010px;
-    width: 1505px;
+    height: 2215px;
+    width: 1685px;
   }
   #main .slider {
     height: 1600px;
  }
+ #about .top-container {
+   min-height: 160px;
+ }
+ #about .top-container .about-logo {
+   float: none;
+   margin: auto 45%;
+   min-width: 185px;
+   min-height: 135px;
+  }
+ #about  .wrapper {
+   height: 1580px;
+   display: block;
+ }
+
  #about.active .wrapper {
    height: 1580px;
    display: block;
+ }
+ #about .wrapper .bio {
+   width: 1200px;
+}
+ #about .wrapper .portrait {
+   display: none;
  }
  #about.active .wrapper .portrait {
    display: none;
  }
  #about .bio .paragraph-wrapper {
-    max-width: 215%;
-    height: 100%;
+    width: max-content;
+    height: 1420px
     opacity: 1;
     margin: .5em auto;
     padding: 2% 15% 1% 2%;
-    background: blue;
  }
+ #about .bio .paragraph-wrapper p {
+    visibility:hidden;
+
+  }
+ #about.active .bio .paragraph-wrapper p {
+   visibility: visible;
+    font-size: 3.9vh;
+  }
  #main .slider .img-slider {
    width: 1000px;
    height: 1350px;
@@ -114,6 +211,10 @@ and (orientation:landscape) {
   }
   #about .wrapper {
     grid-template-columns: 49% 55%;
+  }
+  #about.active .portrait .portrait-wrapper {
+    height: 60vh;
+    width: 44vh;
   }
   #front-cover {
     width: 1126px;
